@@ -6,7 +6,7 @@
 /*   By: obrittne <obrittne@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 12:41:12 by obrittne          #+#    #+#             */
-/*   Updated: 2024/04/07 16:51:14 by obrittne         ###   ########.fr       */
+/*   Updated: 2024/04/07 17:07:44 by obrittne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ int	so_long(char **map)
 		return (0);
 	data.win = mlx_new_window(data.mlx, data.blocks_x * MULTI, \
 	data.blocks_y * MULTI, "Game");
-	if (1)
+	if (!data.win)
 	{
 		free(data.mlx);
 		return (0);
